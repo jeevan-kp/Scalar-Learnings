@@ -1,0 +1,842 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ALL MEDALISTS+ (Modified_Summer_Olympic_medallists_1896-2008 (1))' inline='true' name='federated.0rjdrgw09ta6xp19zselk1b3wp6g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Modified_Summer_Olympic_medallists_1896-2008 (1)' name='excel-direct.1g3rece1mmy4zf1aeer691gn50om'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/kpjee/Downloads/Modified_Summer_Olympic_medallists_1896-2008 (1).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[ALL MEDALISTS].[NOC]' />
+              <expression op='[TEAM EVENTS FIXED, ALL YRS TOTA].[NOC CODE]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.1g3rece1mmy4zf1aeer691gn50om' name='ALL MEDALISTS' table='[&apos;ALL MEDALISTS$&apos;]' type='table'>
+            <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='6'>
+              <column datatype='string' name='City' ordinal='0' />
+              <column datatype='integer' name='Edition' ordinal='1' />
+              <column datatype='string' name='Sport' ordinal='2' />
+              <column datatype='string' name='Discipline' ordinal='3' />
+              <column datatype='string' name='Athlete' ordinal='4' />
+              <column datatype='string' name='NOC' ordinal='5' />
+              <column datatype='string' name='Gender' ordinal='6' />
+              <column datatype='string' name='Event' ordinal='7' />
+              <column datatype='string' name='Event_gender' ordinal='8' />
+              <column datatype='string' name='Medal' ordinal='9' />
+              <column datatype='integer' name='Count of medals' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1g3rece1mmy4zf1aeer691gn50om' name='TEAM EVENTS FIXED, ALL YRS TOTA' table='[&apos;TEAM EVENTS FIXED, ALL YRS TOTA$&apos;]' type='table'>
+            <columns gridOrigin='A1:F135:no:A1:F135:0' header='yes' outcome='6'>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='string' name='NOC CODE' ordinal='1' />
+              <column datatype='integer' name='Total' ordinal='2' />
+              <column datatype='integer' name='Golds' ordinal='3' />
+              <column datatype='integer' name='Silvers' ordinal='4' />
+              <column datatype='integer' name='Bronzes' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[ALL MEDALISTS].[NOC]' />
+              <expression op='[TEAM EVENTS FIXED, ALL YRS TOTA].[NOC CODE]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.1g3rece1mmy4zf1aeer691gn50om' name='ALL MEDALISTS' table='[&apos;ALL MEDALISTS$&apos;]' type='table'>
+            <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='6'>
+              <column datatype='string' name='City' ordinal='0' />
+              <column datatype='integer' name='Edition' ordinal='1' />
+              <column datatype='string' name='Sport' ordinal='2' />
+              <column datatype='string' name='Discipline' ordinal='3' />
+              <column datatype='string' name='Athlete' ordinal='4' />
+              <column datatype='string' name='NOC' ordinal='5' />
+              <column datatype='string' name='Gender' ordinal='6' />
+              <column datatype='string' name='Event' ordinal='7' />
+              <column datatype='string' name='Event_gender' ordinal='8' />
+              <column datatype='string' name='Medal' ordinal='9' />
+              <column datatype='integer' name='Count of medals' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1g3rece1mmy4zf1aeer691gn50om' name='TEAM EVENTS FIXED, ALL YRS TOTA' table='[&apos;TEAM EVENTS FIXED, ALL YRS TOTA$&apos;]' type='table'>
+            <columns gridOrigin='A1:F135:no:A1:F135:0' header='yes' outcome='6'>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='string' name='NOC CODE' ordinal='1' />
+              <column datatype='integer' name='Total' ordinal='2' />
+              <column datatype='integer' name='Golds' ordinal='3' />
+              <column datatype='integer' name='Silvers' ordinal='4' />
+              <column datatype='integer' name='Bronzes' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K10001:no:A1:K10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F135:no:A1:F135:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Edition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Edition]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Edition</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sport</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sport]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Sport</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discipline</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Discipline]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Discipline</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Athlete</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Athlete]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Athlete</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NOC]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>NOC</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Event]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Event</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event_gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Event_gender]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Event_gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medal</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Medal]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Medal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count of medals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count of medals]</local-name>
+            <parent-name>[ALL MEDALISTS]</parent-name>
+            <remote-alias>Count of medals</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOC CODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NOC CODE]</local-name>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias>NOC CODE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Golds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Golds]</local-name>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias>Golds</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Silvers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Silvers]</local-name>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias>Silvers</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bronzes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bronzes]</local-name>
+            <parent-name>[TEAM EVENTS FIXED, ALL YRS TOTA]</parent-name>
+            <remote-alias>Bronzes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Edition]' role='dimension' type='ordinal' />
+      <column caption='Event gender' datatype='string' name='[Event_gender]' role='dimension' type='nominal' />
+      <column caption='Noc Code' datatype='string' name='[NOC CODE]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ALL MEDALISTS' datatype='table' name='[__tableau_internal_object_id__].[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Country, City' />
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kpjee/AppData/Local/Temp/TableauTemp/#TableauTemp_1wk0e421vapd851cv2wn8111k36v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2024 05:49:56 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Edition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Edition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Edition</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sport</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discipline</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Discipline]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discipline</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Athlete</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Athlete]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Athlete</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9913</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NOC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NOC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NOC</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>673</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event_gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event_gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event_gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Medal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Medal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Medal</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Count of medals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Count of medals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Count of medals</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ALL MEDALISTS</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>11</ordinal>
+              <family>TEAM EVENTS FIXED, ALL YRS TOTA</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NOC CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NOC CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NOC CODE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>TEAM EVENTS FIXED, ALL YRS TOTA</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>13</ordinal>
+              <family>TEAM EVENTS FIXED, ALL YRS TOTA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Golds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Golds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Golds</remote-alias>
+              <ordinal>14</ordinal>
+              <family>TEAM EVENTS FIXED, ALL YRS TOTA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Silvers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Silvers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Silvers</remote-alias>
+              <ordinal>15</ordinal>
+              <family>TEAM EVENTS FIXED, ALL YRS TOTA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bronzes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bronzes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bronzes</remote-alias>
+              <ordinal>16</ordinal>
+              <family>TEAM EVENTS FIXED, ALL YRS TOTA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ALL MEDALISTS' id='ALL MEDALISTS_32487FE7D84943BDBC23F8BC4E2DA9A9'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[ALL MEDALISTS].[NOC]' />
+                    <expression op='[TEAM EVENTS FIXED, ALL YRS TOTA].[NOC CODE]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.1g3rece1mmy4zf1aeer691gn50om' name='ALL MEDALISTS' table='[&apos;ALL MEDALISTS$&apos;]' type='table'>
+                  <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='6'>
+                    <column datatype='string' name='City' ordinal='0' />
+                    <column datatype='integer' name='Edition' ordinal='1' />
+                    <column datatype='string' name='Sport' ordinal='2' />
+                    <column datatype='string' name='Discipline' ordinal='3' />
+                    <column datatype='string' name='Athlete' ordinal='4' />
+                    <column datatype='string' name='NOC' ordinal='5' />
+                    <column datatype='string' name='Gender' ordinal='6' />
+                    <column datatype='string' name='Event' ordinal='7' />
+                    <column datatype='string' name='Event_gender' ordinal='8' />
+                    <column datatype='string' name='Medal' ordinal='9' />
+                    <column datatype='integer' name='Count of medals' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1g3rece1mmy4zf1aeer691gn50om' name='TEAM EVENTS FIXED, ALL YRS TOTA' table='[&apos;TEAM EVENTS FIXED, ALL YRS TOTA$&apos;]' type='table'>
+                  <columns gridOrigin='A1:F135:no:A1:F135:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Country' ordinal='0' />
+                    <column datatype='string' name='NOC CODE' ordinal='1' />
+                    <column datatype='integer' name='Total' ordinal='2' />
+                    <column datatype='integer' name='Golds' ordinal='3' />
+                    <column datatype='integer' name='Silvers' ordinal='4' />
+                    <column datatype='integer' name='Bronzes' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Find the total number of gold medals won by the country India in the year 1928'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ALL MEDALISTS+ (Modified_Summer_Olympic_medallists_1896-2008 (1))' name='federated.0rjdrgw09ta6xp19zselk1b3wp6g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rjdrgw09ta6xp19zselk1b3wp6g'>
+            <column datatype='integer' name='[Count of medals]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Edition]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Medal]' role='dimension' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Edition]' derivation='None' name='[none:Edition:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Medal]' derivation='None' name='[none:Medal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Count of medals]' derivation='Sum' name='[sum:Count of medals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;India&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Edition:ok]'>
+            <groupfilter function='member' level='[none:Edition:ok]' member='1928' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Medal:nk]'>
+            <groupfilter function='member' level='[none:Medal:nk]' member='&quot;Gold&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Country:nk]</column>
+            <column>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Medal:nk]</column>
+            <column>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Edition:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[sum:Count of medals:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{9B3E8D49-D232-4769-B655-ACDE9ED1D166}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Find the total number of gold medals won by the country India in the year 1928'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Country:nk]</field>
+            <field>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Edition:ok]</field>
+            <field>[federated.0rjdrgw09ta6xp19zselk1b3wp6g].[none:Medal:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4B2CE45B-50F9-4505-B5B9-E60B08B03C02}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='65' name='Find the total number of gold medals won by the country India in the year 1928' width='64'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Omega_HR_dataset' inline='true' name='federated.09nl4x10l26dqr18s1yt80n5c4ag' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Omega_HR_dataset' name='textscan.1otlnap1ufx2uq12k5spa1jrutaw'>
+            <connection class='textscan' directory='C:/Users/kpjee/Downloads' filename='Omega_HR_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1otlnap1ufx2uq12k5spa1jrutaw' name='Omega_HR_dataset.csv' table='[Omega_HR_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Id' ordinal='0' />
+            <column datatype='string' name='Complete Name' ordinal='1' />
+            <column datatype='string' name='Department' ordinal='2' />
+            <column datatype='string' name='Employement Status' ordinal='3' />
+            <column datatype='string' name='Location' ordinal='4' />
+            <column datatype='integer' name='% terminated' ordinal='5' />
+            <column datatype='integer' name='Age' ordinal='6' />
+            <column datatype='date' name='Birthdate' ordinal='7' />
+            <column datatype='string' name='Gender' ordinal='8' />
+            <column datatype='date' name='Hire Date' ordinal='9' />
+            <column datatype='string' name='Jobtitle' ordinal='10' />
+            <column datatype='string' name='Location City' ordinal='11' />
+            <column datatype='string' name='Location State' ordinal='12' />
+            <column datatype='date' name='Termdate' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1otlnap1ufx2uq12k5spa1jrutaw' name='Omega_HR_dataset.csv' table='[Omega_HR_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Id' ordinal='0' />
+            <column datatype='string' name='Complete Name' ordinal='1' />
+            <column datatype='string' name='Department' ordinal='2' />
+            <column datatype='string' name='Employement Status' ordinal='3' />
+            <column datatype='string' name='Location' ordinal='4' />
+            <column datatype='integer' name='% terminated' ordinal='5' />
+            <column datatype='integer' name='Age' ordinal='6' />
+            <column datatype='date' name='Birthdate' ordinal='7' />
+            <column datatype='string' name='Gender' ordinal='8' />
+            <column datatype='date' name='Hire Date' ordinal='9' />
+            <column datatype='string' name='Jobtitle' ordinal='10' />
+            <column datatype='string' name='Location City' ordinal='11' />
+            <column datatype='string' name='Location State' ordinal='12' />
+            <column datatype='date' name='Termdate' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complete Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Complete Name]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Complete Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employement Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Employement Status]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Employement Status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% terminated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% terminated]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>% terminated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birthdate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Birthdate]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Birthdate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hire Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Hire Date]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Hire Date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jobtitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Jobtitle]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Jobtitle</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location City]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Location City</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location State]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Location State</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Termdate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Termdate]</local-name>
+            <parent-name>[Omega_HR_dataset.csv]</parent-name>
+            <remote-alias>Termdate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Terminated' datatype='integer' name='[% terminated]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Location City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Location State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='employees' datatype='table' name='[__tableau_internal_object_id__].[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Location State, Location City'>
+          <field>[Location State]</field>
+          <field>[Location City]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kpjee/AppData/Local/Temp/TableauTemp/#TableauTemp_0bw1xgg1sintcg1dxrlxy1pulkxv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/26/2024 12:22:16 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22211</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Complete Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Complete Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Complete Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22211</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employement Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Employement Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employement Status</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% terminated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% terminated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% terminated</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Birthdate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Birthdate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Birthdate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>7240</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hire Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Hire Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hire Date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6511</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Jobtitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Jobtitle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Jobtitle</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location City</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location State</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Termdate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Termdate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Termdate</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Omega_HR_dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3705</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='employees' id='Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61'>
+            <properties context=''>
+              <relation connection='textscan.1otlnap1ufx2uq12k5spa1jrutaw' name='Omega_HR_dataset.csv' table='[Omega_HR_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Id' ordinal='0' />
+                  <column datatype='string' name='Complete Name' ordinal='1' />
+                  <column datatype='string' name='Department' ordinal='2' />
+                  <column datatype='string' name='Employement Status' ordinal='3' />
+                  <column datatype='string' name='Location' ordinal='4' />
+                  <column datatype='integer' name='% terminated' ordinal='5' />
+                  <column datatype='integer' name='Age' ordinal='6' />
+                  <column datatype='date' name='Birthdate' ordinal='7' />
+                  <column datatype='string' name='Gender' ordinal='8' />
+                  <column datatype='date' name='Hire Date' ordinal='9' />
+                  <column datatype='string' name='Jobtitle' ordinal='10' />
+                  <column datatype='string' name='Location City' ordinal='11' />
+                  <column datatype='string' name='Location State' ordinal='12' />
+                  <column datatype='date' name='Termdate' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Employee by Department'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Omega_HR_dataset' name='federated.09nl4x10l26dqr18s1yt80n5c4ag' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09nl4x10l26dqr18s1yt80n5c4ag'>
+            <_.fcp.ObjectModelTableType.false...column caption='employees' datatype='integer' name='[__tableau_internal_object_id__].[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='employees' datatype='table' name='[__tableau_internal_object_id__].[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09nl4x10l26dqr18s1yt80n5c4ag].[none:Department:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09nl4x10l26dqr18s1yt80n5c4ag].[__tableau_internal_object_id__].[cnt:Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.09nl4x10l26dqr18s1yt80n5c4ag].[__tableau_internal_object_id__].[cnt:Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09nl4x10l26dqr18s1yt80n5c4ag].[none:Department:nk]</rows>
+        <cols>[federated.09nl4x10l26dqr18s1yt80n5c4ag].[__tableau_internal_object_id__].[cnt:Omega_HR_dataset.csv_C2B0D4C05388466FAD26D66C258D6C61:qk]</cols>
+      </table>
+      <simple-id uuid='{DA1B65E0-35B5-407F-A539-7C6384925306}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FD0ED792-E98A-426C-BFBF-E9481894D94F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C6CDCA5B-BD8C-42B9-8AF8-F2BA6EE9C4DB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Employee by Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09nl4x10l26dqr18s1yt80n5c4ag].[none:Department:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{292ABABA-D47B-4B67-8EE1-0CF313ECF185}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Employee by Department' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
